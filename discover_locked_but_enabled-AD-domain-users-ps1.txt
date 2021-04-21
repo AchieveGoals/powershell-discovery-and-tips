@@ -1,0 +1,3 @@
+# Larry T (updated to match later version of commands to query AD) - LJT 2021
+# 
+Search-ADAccount -LockedOut -UsersOnly | where ($_.Enabled -eq $true) | Select-Object Name, SamAccountName | Out-GridView -Title "Proactive Review Required - Locked but Enabled AD Domain User Accounts"
