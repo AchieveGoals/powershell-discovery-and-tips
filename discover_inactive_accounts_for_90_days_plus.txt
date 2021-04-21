@@ -1,0 +1,3 @@
+# LarryT  confirm Account Activity using last 90 days as timespan
+$timespan = New-Timespan -Days 90
+Search-ADAccount -UsersOnly -AccountInactive -Timespan $timespan | Out-GridView -Title "Discover AD accounts not active in last $timespan days"
