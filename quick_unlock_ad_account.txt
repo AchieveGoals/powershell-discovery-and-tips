@@ -1,0 +1,3 @@
+## LJT quick unlock of a locked but enabled account in Active Directory - LarryT
+$targetaccount = "LJT"
+search-adaccount -usersonly -lockedout | where {$_.Enabled -eq $true} | where {$_.SamAccountName -eq $targetaccount } | Unlock-ADAccount
