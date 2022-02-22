@@ -10,3 +10,6 @@
 
 ###  20210421 LJT Archival code recovery:  "added compare configured OS vs running OS in VM Guest ~circa 2017"
 
+###  20220220 LJT Added docs.hak5.com shark-jack related Powershell script (menu driven control over sharkjack from Windows)
+
+
