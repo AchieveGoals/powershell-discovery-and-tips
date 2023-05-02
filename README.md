@@ -15,3 +15,14 @@
 ###  20220502 LJT Gathering links to update SSL Certs (IIS, Plesk, Nginx, Tomcat9, Apache)
 Review this site for decent discussion and examples.  --don't run Powershell scripts from web without careful review--
 [Updating IIS Certs with Posh](https://lachlanbarclay.net/2022/01/updating-iis-certificates-with-powershell) {https://lachlanbarclay.net/2022/01/updating-iis-certificates-with-powershell}
+
+## TODO: 
+
+May Project - translate all asset detection into a document-compatible NoSQL format (suitable for MongoDB, etc.) for dynamic web reporting, mobile monitoring, etc. Started with replacing test-connection script:
+
+```
+Original Output (from Out-GridView):
+True  VEEAM 10.185.1.85
+New Output: 
+<asset_type>VEEAM</asset_type><asset_location>Headquarters</asset_location><asset_use>BCDR</asset_use><asset_ip>10.185.1.85</asset_ip>
+```
