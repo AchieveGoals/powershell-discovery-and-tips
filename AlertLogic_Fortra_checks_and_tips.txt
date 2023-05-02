@@ -1,0 +1,30 @@
+# Name: Simple tips, need to be organized into PowerShell functions, etc.
+# Author:  Larry Timmins (c) 2023
+
+#// Agent notes:
+# install: C:\"Program Files (x86)"\AlertLogic\agent
+# agent details: C:\"Program Files (x86)"\AlertLogic\agent\al-agent.exe -c
+# cert & key directory: C:\"Program Files (x86)"\AlertLogic\
+# agent help: C:\"Program Files (x86)"\AlertLogic\agent\al-agent.exe help
+#// Agent download path:
+# 32 and 64-bit (msi and zip file):
+# https://scc.alertlogic.net/software/al_agent-LATEST.msi
+# https://scc.alertlogic.net/software/al_agent-LATEST.zip
+
+#// Is Agent already installed?  Q1 2023
+cd "\Program Files (x86)"
+get-childitem "\Program Files (x86)" -recurse  | where-object {$_.name -like "*al-agent.exe"} | select name, lastwritetime, mode, length, fullname | Out-GridView -Title "Find Agent"
+
+
+
+#
+# TODO:
+# add dynamic monitoring of FIM, WLA, ENPT, ALAGENT, LOGGING
+# create custom log 
+
+
+## REFERENCES:
+# Agent - Windows Installation:
+#// https://docs.alertlogic.com/prepare/alert-logic-agent-windows.htm
+# Agent locations (includiong Linux):
+#// https://support.alertlogic.com/hc/en-us/articles/360001680032-What-are-common-Alert-Logic-agent-commands-and-directory-paths-that-are-useful-for-installation-and-troubleshooting-
