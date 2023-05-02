@@ -14,4 +14,4 @@
 
 ###  20220502 LJT Gathering links to update SSL Certs (IIS, Plesk, Nginx, Tomcat9, Apache)
 Review this site for decent discussion and examples.  --don't run Powershell scripts from web without careful review--
-[Updating IIS Certs with Posh](https://lachlanbarclay.net/2022/01/updating-iis-certificates-with-powershell)
+[Updating IIS Certs with Posh](https://lachlanbarclay.net/2022/01/updating-iis-certificates-with-powershell)https://lachlanbarclay.net/2022/01/updating-iis-certificates-with-powershell
